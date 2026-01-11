@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Figment
-//
-//  Created by Sacha Sedriks on 12/2/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {

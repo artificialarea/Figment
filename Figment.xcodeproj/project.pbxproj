@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A4B7F9E52EF610A500BA6AE3 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = A4B7F9E42EF610A500BA6AE3 /* AudioKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A410F44D2EDFFBA100341408 /* Figment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Figment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B7F9E52EF610A500BA6AE3 /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = Figment;
 			packageProductDependencies = (
+				A4B7F9E42EF610A500BA6AE3 /* AudioKit */,
 			);
 			productName = Figment;
 			productReference = A410F44D2EDFFBA100341408 /* Figment.app */;
@@ -78,7 +84,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2610;
-				LastUpgradeCheck = 2610;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					A410F44C2EDFFBA100341408 = {
 						CreatedOnToolsVersion = 26.1.1;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = A410F4442EDFFBA100341408;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A4B7F9E32EF610A500BA6AE3 /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A410F44E2EDFFBA100341408 /* Products */;
 			projectDirPath = "";
@@ -183,6 +192,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -239,6 +249,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -328,6 +339,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4B7F9E32EF610A500BA6AE3 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4B7F9E42EF610A500BA6AE3 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4B7F9E32EF610A500BA6AE3 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A410F4452EDFFBA100341408 /* Project object */;
 }

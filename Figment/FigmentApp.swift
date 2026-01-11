@@ -1,17 +1,13 @@
-//
-//  FigmentApp.swift
-//  Figment
-//
-//  Created by Sacha Sedriks on 12/2/25.
-//
-
 import SwiftUI
 
 @main
 struct FigmentApp: App {
+    @StateObject private var engine = InstrumentEngine()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // ContentView()
+            PadsGridView(engine: engine)
         }
     }
 }
